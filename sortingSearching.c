@@ -2,7 +2,7 @@
 
 void inputArray(int *a, int *n) {
     printf("Enter the number of elements: ");
-    scanf("%d", n); // Corrected to take the array size as input
+    scanf("%d", n);
 
     printf("Enter the array elements:\n");
     for (int i = 0; i < *n; i++) {
@@ -45,10 +45,10 @@ int search(int *a, int n, int target) {
 }
 
 int main() {
-    int a[100];  // Adjust size as needed
+    int a[100];  
     int n, target;
     
-    inputArray(a, &n);  // Pass n by reference to modify its value
+    inputArray(a, &n); 
     sort(a, n);
 
     printf("Enter the search target: ");
